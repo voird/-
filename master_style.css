@@ -22,3 +22,26 @@ h1, h2, h3 {
 .header a:hover {
     text-decoration: underline;
 }
+
+figure {
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    max-width: 90%;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+}
