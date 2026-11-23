@@ -1,191 +1,56 @@
-
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Индивидуальный раздел — Сторожева П.А.</title>
-<link href="../master_style.css" rel="stylesheet"/>
+<link href="../master_style.css" rel="stylesheet">
 <style>
-        .section {
-            margin: 30px 0;
-            padding: 22px;
-            background: white;
-            border-radius: 10px;
-            border-left: 4px solid #003366;
-        }
-
-        .section h2 {
-            margin-top: 0;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 0;
-            list-style: none;
-        }
-
-        .skills li {
-            background: #e8eef5;
-            color: #003366;
-            padding: 8px 14px;
-            border-radius: 6px;
-        }
-
-        .project {
-            margin: 15px 0;
-            padding: 15px;
-            background: #f3f6fa;
-            border-radius: 8px;
-        }
-
-        .project h3 {
-            margin-top: 0;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #003366;
-        }
-    </style>
+.individual-page{max-width:1120px;margin:38px auto 80px;padding:0 24px}
+.individual-intro{background:#1f3b50;color:#fff;border-radius:20px;padding:38px 42px;margin-bottom:24px;box-shadow:0 20px 50px rgba(25,43,62,.12)}
+.individual-intro .kicker{color:#d4b18c;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:750}
+.individual-intro h1{color:#fff;font-size:clamp(30px,4vw,42px);margin:12px 0}
+.individual-intro p{color:#d8e1e8;max-width:850px;margin:0}
+.individual-lead{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin:22px 0}
+.individual-lead .lead-card,.skill-panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 7px 22px rgba(25,43,62,.035)}
+.individual-lead h2,.skill-panel h2{font-size:20px;margin:0 0 10px;color:#203d52}
+.individual-lead p{margin:0;color:var(--muted)}
+.interest-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.interest-tags span{background:#edf2f5;color:#35566b;border-radius:30px;padding:6px 11px;font-size:12px;font-weight:650}
+.individual-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:22px 0}
+.individual-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:23px;box-shadow:0 7px 22px rgba(25,43,62,.035)}
+.individual-card .card-number{font-size:11px;letter-spacing:.13em;color:#a17b59;font-weight:800}
+.individual-card h2{font-size:21px;margin:8px 0 10px;color:#203d52}
+.individual-card p{margin:0 0 12px;color:#536276}
+.individual-card ul{padding-left:19px;margin:8px 0 0}
+.individual-card li{font-size:14px;color:#536276;padding:2px 0}
+.individual-card.wide{grid-column:1/-1}
+.skill-panel{margin-top:18px}
+.skill-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.skill-group{padding:15px;background:#f6f8fa;border-radius:11px}
+.skill-group strong{display:block;color:#29475c;margin-bottom:8px;font-size:14px}
+.skill-group p{margin:0;color:#65738a;font-size:13px}
+.individual-footer{margin-top:25px}
+@media(max-width:760px){.individual-lead,.individual-grid,.skill-groups{grid-template-columns:1fr}.individual-card.wide{grid-column:auto}.individual-intro{padding:29px 25px}}
+@media(max-width:560px){.individual-page{padding:0 14px;margin-top:20px}.individual-intro{padding:25px 21px}}
+</style>
 </head>
-<body><div class="site-header"><div class="header-inner"><a class="brand" href="../index.htm"><span class="brand-mark">PA</span><span>PA / PORTFOLIO</span></a><nav class="nav-links"><a class="" href="../index.htm">Главная</a><a class="" href="../diss/index.htm">Автореферат</a><a class="" href="../library/index.htm">Библиотека</a><a class="" href="../links/index.htm">Ссылки</a><a class="active" href="../ind/index.htm">Индивидуальный раздел</a><a class="" href="../resume.htm">Резюме</a><a class="" href="../search-report.htm">Отчёт о поиске</a></nav></div></div>
-
-<h1>Практический опыт в машинном обучении
-        и 3D-моделировании</h1>
-<p>
-        Данный раздел посвящён моему практическому опыту
-        в области программирования, машинного обучения,
-        анализа данных и трёхмерной компьютерной графики.
-        Особое внимание уделяется инструментам и технологиям,
-        которые представляют интерес в контексте моей
-        магистерской диссертации.
-    </p>
-<div class="section">
-<h2>1. Программирование и машинное обучение</h2>
-<p>
-            Основным языком программирования, используемым
-            в моей работе, является Python. Он применяется
-            для обработки данных, реализации алгоритмов
-            и разработки моделей машинного обучения.
-        </p>
-<p>
-            В работе использую библиотеки Python,
-            предназначенные для математических вычислений,
-            анализа данных и построения моделей машинного
-            обучения.
-        </p>
-<h3>Основные направления работы:</h3>
-<ul>
-<li>Обработка и анализ данных;</li>
-<li>Подготовка наборов данных;</li>
-<li>Работа с алгоритмами машинного обучения;</li>
-<li>Разработка и тестирование моделей;</li>
-<li>Программная реализация вычислительных задач.</li>
-</ul>
-<h3>Используемые технологии</h3>
-<ul class="skills">
-<li>Python</li>
-<li>Machine Learning</li>
-<li>Data Analysis</li>
-<li>NumPy</li>
-<li>Pandas</li>
-<li>Scikit-learn</li>
-</ul>
-</div>
-<div class="section">
-<h2>2. Практический опыт анализа данных</h2>
-<p>
-            В рамках дополнительного образования в Томском
-            государственном университете я прошла обучение
-            по направлению «Машинное обучение».
-        </p>
-<p>
-            Также в период обучения была пройдена стажировка,
-            связанная с анализом базы данных компьютерных
-            комплектующих.
-        </p>
-<p>
-            Данный опыт позволил познакомиться с практическими
-            задачами анализа структурированной информации
-            и применением программных инструментов для работы
-            с данными.
-        </p>
-</div>
-<div class="section">
-<h2>3. Трёхмерное моделирование и Blender</h2>
-<p>
-            Ещё одним направлением моей практической
-            деятельности является трёхмерное моделирование.
-            Для создания и обработки трёхмерных объектов
-            я использую программное обеспечение Blender.
-        </p>
-<p>
-            В Blender я создаю трёхмерные модели,
-            работаю с геометрией объектов и занимаюсь
-            их анимацией.
-        </p>
-<h3>Основные направления:</h3>
-<ul>
-<li>Создание трёхмерных моделей;</li>
-<li>Работа с геометрией объектов;</li>
-<li>Настройка материалов и освещения;</li>
-<li>Создание и настройка анимации;</li>
-<li>Визуализация трёхмерных сцен.</li>
-</ul>
-<ul class="skills">
-<li>Blender</li>
-<li>3D Modeling</li>
-<li>Animation</li>
-<li>Computer Graphics</li>
-</ul>
-</div>
-<div class="section">
-<h2>4. Связь практических навыков
-            с темой магистерской диссертации</h2>
-<p>
-            Моя магистерская диссертация посвящена разработке
-            системы для реконструкции трёхмерных моделей
-            по изображениям.
-        </p>
-<p>
-            Данная задача объединяет несколько направлений:
-            программирование, компьютерное зрение,
-            машинное обучение, обработку изображений
-            и трёхмерную компьютерную графику.
-        </p>
-<p>
-            Полученные знания в области Python и машинного
-            обучения могут применяться при разработке
-            алгоритмов обработки изображений и анализа
-            визуальной информации. Опыт работы в Blender
-            позволяет работать с трёхмерной геометрией,
-            моделями и визуализацией результатов.
-        </p>
-<p>
-            Таким образом, мои профессиональные интересы
-            и практические навыки непосредственно связаны
-            с тематикой проводимого исследования.
-        </p>
-</div>
-<div class="section">
-<h2>5. Профессиональные интересы</h2>
-<p>
-            В дальнейшем я планирую развиваться в области
-            машинного обучения, компьютерного зрения
-            и трёхмерной графики. Особый интерес представляют
-            методы автоматизированной реконструкции объектов,
-            получение трёхмерных моделей по фотографиям
-            и применение современных алгоритмов анализа
-            визуальной информации.
-        </p>
-</div>
-<a class="back-link" href="../index.htm">
-        ← Вернуться на главную страницу
-    </a>
-</body>
-</html>
+<body>
+<div class="site-header"><div class="header-inner"><a class="brand" href="../index.htm"><span class="brand-mark">PA</span><span>PA / PORTFOLIO</span></a><nav class="nav-links"><a href="../index.htm">Главная</a><a href="../diss/index.htm">Автореферат</a><a href="../library/index.htm">Библиотека</a><a href="../links/index.htm">Ссылки</a><a class="active" href="../ind/index.htm">Индивидуальный раздел</a><a href="../resume.htm">Резюме</a><a href="../search-report.htm">Отчёт о поиске</a></nav></div></div>
+<main class="individual-page">
+<header class="individual-intro"><span class="kicker">Индивидуальный раздел · творческая и техническая практика</span><h1>Мои проекты и цифровые навыки</h1><p>Помимо учебной и исследовательской деятельности, я развиваюсь в геймдеве и цифровом искусстве: создаю игры, моделирую и анимирую трёхмерные объекты, изучаю новые инструменты и работаю с растровой графикой.</p></header>
+<section class="individual-lead">
+<div class="lead-card"><h2>О творческой практике</h2><p>Мне интересно объединять технические и художественные навыки. Разработка игр помогает продумывать механику и взаимодействие, 3D-направление — создавать объекты и сцены, а цифровой рисунок — работать с визуальным стилем и деталями.</p><div class="interest-tags"><span>Game Development</span><span>3D Art</span><span>Animation</span><span>Digital Illustration</span></div></div>
+<div class="lead-card"><h2>Основные направления</h2><p>Сейчас я уделяю внимание нескольким взаимосвязанным областям: созданию игр на Godot, 3D-моделированию и анимации в Blender, скульптингу в ZBrush, а также цифровому рисунку.</p></div>
+</section>
+<section class="individual-grid">
+<article class="individual-card"><span class="card-number">01 / GAME DEVELOPMENT</span><h2>Разработка игр на Godot</h2><p>Самостоятельно разрабатываю игровые проекты на движке Godot. Изучаю процесс создания игр — от идеи и построения игровой логики до настройки сцен и взаимодействия объектов.</p><ul><li>Разработка игровых механик;</li><li>Работа со сценами и объектами;</li><li>Изучение инструментов и возможностей Godot.</li></ul></article>
+<article class="individual-card"><span class="card-number">02 / 3D MODELING</span><h2>3D-моделирование и анимация</h2><p>В Blender создаю трёхмерные модели и работаю над их анимацией. Изучаю построение формы, организацию сцены и способы визуального представления объектов.</p><ul><li>Создание и редактирование 3D-моделей;</li><li>Работа с материалами и сценами;</li><li>Подготовка и настройка анимации.</li></ul></article>
+<article class="individual-card"><span class="card-number">03 / DIGITAL SCULPTING</span><h2>Изучение ZBrush</h2><p>В настоящее время осваиваю ZBrush и его инструменты цифрового скульптинга. Это направление позволяет подробнее работать с органическими формами, силуэтом и поверхностью моделей.</p><ul><li>Знакомство с инструментами скульптинга;</li><li>Практика работы с формой и детализацией;</li><li>Изучение пайплайна создания цифровых моделей.</li></ul></article>
+<article class="individual-card"><span class="card-number">04 / 2D ART</span><h2>Цифровой рисунок</h2><p>Для создания 2D-графики использую Aseprite и Clip Studio Paint. Работаю с пиксельной графикой и иллюстрацией, экспериментирую с визуальной подачей и стилем.</p><ul><li>Рисование пиксель-арта в Aseprite;</li><li>Создание иллюстраций в Clip Studio Paint;</li><li>Работа с цветом, формой и композицией.</li></ul></article>
+<article class="individual-card wide"><span class="card-number">05 / CONTINUOUS LEARNING</span><h2>Развитие и связь направлений</h2><p>Я продолжаю изучать новые программы и постепенно расширяю набор практических навыков. Игровая разработка, 3D-моделирование, анимация и цифровой рисунок дополняют друг друга: созданные модели и изображения могут становиться частью игровых проектов, а навыки работы с визуальной формой помогают развивать собственный художественный стиль.</p></article>
+</section>
+<section class="skill-panel"><h2>Инструменты и программы</h2><div class="skill-groups"><div class="skill-group"><strong>Игровая разработка</strong><p>Godot</p></div><div class="skill-group"><strong>3D и анимация</strong><p>Blender · ZBrush (изучаю)</p></div><div class="skill-group"><strong>2D-графика</strong><p>Aseprite · Clip Studio Paint</p></div></div></section>
+<div class="individual-footer"><a class="back-link" href="../index.htm">← Вернуться на главную страницу</a></div>
+</main>
+</body></html>
