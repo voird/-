@@ -5,213 +5,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Электронная библиотека — 3D-реконструкция</title>
-    <link rel="stylesheet" href="../master_style.css">
+    <link rel="stylesheet" type="text/css" href="../master_style.css">
+    <style>
+        .library-intro {
+            text-indent: 0;
+            margin-bottom: 25px;
+        }
+        .resource {
+            margin-bottom: 22px;
+            padding: 18px 22px;
+            border-left: 4px solid #77003c;
+            background: rgba(119, 0, 60, 0.045);
+            border-radius: 5px;
+        }
+        .resource h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .resource p {
+            margin: 7px 0;
+        }
+        .resource .authors {
+            font-size: 0.92em;
+            color: #666;
+        }
+        .resource a {
+            overflow-wrap: anywhere;
+        }
+        .resource-number {
+            color: #77003c;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
 
-        <header class="library-header">
-            <h1>Электронная библиотека</h1>
-            <p class="subtitle">
-                Информационные и научные материалы по теме
-                трехмерной реконструкции объектов на основе изображений
-            </p>
-        </header>
+    <header>
+        <h1>Электронная библиотека</h1>
+        <p>Материалы по теме магистерской работы</p>
+    </header>
 
-        <section class="library-section">
-            <h2>Научные исследования и проекты в области 3D-реконструкции</h2>
+    <nav>
+        <a href="../index.htm">Главная</a>
+        <a href="index.htm">Библиотека</a>
+        <a href="../links/index.htm">Перечень ссылок</a>
+        <a href="../individual/index.htm">Индивидуальный раздел</a>
+    </nav>
 
-            <article class="library-card">
-                <h3>Awesome Neural CAD</h3>
-                <p class="description">
-                    Подборка научных публикаций и разработок, посвященных
-                    применению нейронных сетей в автоматизированном
-                    проектировании. Материалы позволяют ознакомиться
-                    с современными подходами к созданию и обработке
-                    трехмерных CAD-моделей.
-                </p>
-                <p><strong>Авторы:</strong> Коллектив авторов.</p>
-                <p><strong>Тип материала:</strong> Научный проект.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://bunnysocrazy.com/" target="_blank">
-                        Официальный сайт Awesome Neural CAD
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 05.01.2026</p>
-            </article>
+    <main>
+        <h2>Научные публикации и исследования</h2>
 
-            <article class="library-card">
-                <h3>CADDreamer: CAD Object Generation from Single-view Images</h3>
-                <p class="description">
-                    Исследование посвящено автоматической генерации
-                    трехмерных CAD-объектов по изображению с одного
-                    ракурса. Представленный подход представляет интерес
-                    для изучения методов восстановления геометрии
-                    объектов при ограниченном количестве исходных данных.
-                </p>
-                <p><strong>Авторы:</strong> Коллектив авторов.</p>
-                <p><strong>Тип материала:</strong> Научная статья.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://arxiv.org/abs/2502.20732" target="_blank">
-                        arXiv — CADDreamer
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 02.07.2026</p>
-            </article>
+        <p class="library-intro">
+            В электронной библиотеке собраны научные публикации,
+            посвященные методам восстановления трехмерной геометрии
+            по изображениям, нейросетевым архитектурам, представлению
+            трехмерных объектов и генерации CAD-моделей. Представленные
+            работы используются для изучения существующих подходов
+            и определения направлений разработки системы реконструкции
+            трехмерных моделей.
+        </p>
 
-            <article class="library-card">
-                <h3>BrepDiff: Single-Stage B-rep Diffusion Model</h3>
-                <p class="description">
-                    Работа рассматривает применение диффузионных моделей
-                    для генерации трехмерных объектов в формате B-rep.
-                    Особое внимание уделяется восстановлению геометрических
-                    поверхностей и структурных элементов CAD-моделей.
-                    Исследование полезно для изучения современных
-                    нейросетевых методов параметрического моделирования.
-                </p>
-                <p><strong>Авторы:</strong> Коллектив авторов.</p>
-                <p><strong>Тип материала:</strong> Научный проект.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://brepdiff.github.io/" target="_blank">
-                        Официальный сайт BrepDiff
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 03.07.2026</p>
-            </article>
-
-            <article class="library-card">
-                <h3>BrepDiff: Single-Stage B-rep Diffusion Model (публикация)</h3>
-                <p class="description">
-                    Научная публикация, в которой рассматривается
-                    одноэтапная диффузионная архитектура для генерации
-                    граничного представления трехмерных объектов.
-                    Материал дополняет описание проекта BrepDiff
-                    и позволяет изучить его методологическую основу.
-                </p>
-                <p><strong>Авторы:</strong> Коллектив авторов.</p>
-                <p><strong>Тип материала:</strong> Научная публикация.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://dl.acm.org/doi/10.1145/3721238.3730698"
-                       target="_blank">
-                        ACM Digital Library
-                    </a>
-                </p>
-            </article>
-
-            <article class="library-card">
-                <h3>CLR-Wire: Towards Continuous Latent Representations for 3D Curve Wireframe Generation</h3>
-                <p class="description">
-                    Исследование посвящено генерации трехмерных каркасных
-                    представлений объектов с использованием непрерывных
-                    латентных пространств. Рассматриваются методы
-                    построения пространственных кривых и связей между
-                    геометрическими элементами. Работа представляет
-                    интерес для изучения восстановления структуры
-                    трехмерных объектов.
-                </p>
-                <p><strong>Авторы:</strong> Коллектив авторов.</p>
-                <p><strong>Тип материала:</strong> Научная статья.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://arxiv.org/abs/2504.19174" target="_blank">
-                        arXiv — CLR-Wire
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 12.07.2026</p>
-            </article>
-        </section>
-
-        <section class="library-section">
-            <h2>Документация и технические материалы</h2>
-
-            <article class="library-card">
-                <h3>PyTorch Documentation</h3>
-                <p class="description">
-                    Официальная документация библиотеки PyTorch.
-                    Содержит сведения о создании нейронных сетей,
-                    работе с тензорами, настройке процесса обучения,
-                    оптимизации моделей и оценке результатов.
-                    Используется в качестве справочного материала
-                    при реализации алгоритмов глубокого обучения.
-                </p>
-                <p><strong>Разработчик:</strong> Команда PyTorch.</p>
-                <p><strong>Тип материала:</strong> Техническая документация.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://docs.pytorch.org/docs/2.12/index.html"
-                       target="_blank">
-                        Официальная документация PyTorch
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 10.07.2026</p>
-            </article>
-
-            <article class="library-card">
-                <h3>PyTorch3D</h3>
-                <p class="description">
-                    Документация специализированной библиотеки для
-                    работы с трехмерными данными в экосистеме PyTorch.
-                    Описывает инструменты обработки геометрии,
-                    визуализации, работы с трехмерными сетками
-                    и реализации алгоритмов машинного обучения.
-                </p>
-                <p><strong>Разработчик:</strong> Meta.</p>
-                <p><strong>Тип материала:</strong> Техническая документация.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://pytorch3d.org/" target="_blank">
-                        Официальный сайт PyTorch3D
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 17.07.2026</p>
-            </article>
-
-            <article class="library-card">
-                <h3>TensorFlow API Documentation</h3>
-                <p class="description">
-                    Справочный ресурс по библиотеке TensorFlow,
-                    предназначенной для разработки и обучения моделей
-                    машинного обучения. Документация содержит сведения
-                    об основных инструментах, архитектурах нейронных
-                    сетей и механизмах обработки данных.
-                </p>
-                <p><strong>Разработчик:</strong> Команда TensorFlow.</p>
-                <p><strong>Тип материала:</strong> Техническая документация.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://www.tensorflow.org/versions"
-                       target="_blank">
-                        Официальный сайт TensorFlow
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 14.07.2026</p>
-            </article>
-
-            <article class="library-card">
-                <h3>TensorFlow Core API Reference</h3>
-                <p class="description">
-                    Справочник по программному интерфейсу TensorFlow.
-                    Содержит описание функций, классов и модулей,
-                    необходимых для построения, настройки и обучения
-                    нейросетевых моделей. Может использоваться
-                    при разработке и тестировании программных компонентов.
-                </p>
-                <p><strong>Разработчик:</strong> Команда TensorFlow.</p>
-                <p><strong>Тип материала:</strong> Техническая документация.</p>
-                <p><strong>Источник:</strong>
-                    <a href="https://www.tensorflow.org/api_docs/python/tf"
-                       target="_blank">
-                        TensorFlow Core API Reference
-                    </a>
-                </p>
-                <p class="date">Дата обращения: 29.06.2026</p>
-            </article>
-        </section>
-
-        <footer class="library-footer">
+        <section class="resource">
+            <h3><span class="resource-number">01.</span> BrepDiff: A Diffusion Model for B-rep Generation</h3>
+            <p class="authors">Научная публикация, ACM Digital Library, 2025</p>
             <p>
-                Электронная библиотека содержит материалы,
-                используемые для изучения методов трехмерной
-                реконструкции, компьютерного зрения и машинного обучения.
+                Исследование посвящено генерации граничных представлений
+                трехмерных объектов с использованием диффузионных моделей.
+                Работа представляет интерес для изучения восстановления
+                геометрически корректных CAD-моделей.
             </p>
-        </footer>
+            <p><a href="https://dl.acm.org/doi/10.1145/3721238.3730698" target="_blank">Открыть публикацию</a></p>
+        </section>
 
-    </div>
+        <section class="resource">
+            <h3><span class="resource-number">02.</span> CLR-Wire</h3>
+            <p class="authors">Научная публикация, arXiv, 2025</p>
+            <p>
+                Работа рассматривает построение трехмерных моделей
+                на основе структурированного представления геометрических
+                ребер и контуров. Материал полезен для изучения способов
+                восстановления каркасной структуры объекта.
+            </p>
+            <p><a href="https://arxiv.org/abs/2504.19174" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">03.</span> CADDreamer</h3>
+            <p class="authors">Научная публикация, arXiv, 2025</p>
+            <p>
+                Исследование посвящено применению генеративных моделей
+                для создания CAD-геометрии. Рассматриваемые подходы
+                могут использоваться при разработке систем автоматического
+                построения трехмерных объектов.
+            </p>
+            <p><a href="https://arxiv.org/abs/2502.20732" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">04.</span> BrepGen: A B-rep Generative Model</h3>
+            <p class="authors">Научная публикация, arXiv, 2024</p>
+            <p>
+                Работа рассматривает генерацию параметрических трехмерных
+                объектов в формате B-rep. Представляет интерес с точки зрения
+                структурированного описания геометрии и создания CAD-моделей.
+            </p>
+            <p><a href="https://arxiv.org/abs/2401.15563" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">05.</span> Mesh R-CNN</h3>
+            <p class="authors">Gkioxari G., Malik J., Johnson J., ICCV, 2019</p>
+            <p>
+                Метод нейросетевой реконструкции трехмерных сеток
+                по изображениям. Архитектура сочетает обнаружение объектов
+                и построение их трехмерного представления.
+            </p>
+            <p><a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Gkioxari_Mesh_R-CNN_ICCV_2019_paper.html" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">06.</span> Pixel2Mesh: Generating 3D Mesh Models from Single RGB Images</h3>
+            <p class="authors">Wang N. et al., ECCV, 2018</p>
+            <p>
+                В публикации предложен метод последовательного преобразования
+                признаков изображения в трехмерную полигональную сетку.
+                Работа является одним из примеров восстановления геометрии
+                объекта по одному изображению.
+            </p>
+            <p><a href="https://arxiv.org/abs/1804.01654" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">07.</span> MVSNet: Depth Inference for Unstructured Multi-view Stereo</h3>
+            <p class="authors">Yao Y. et al., ECCV, 2018</p>
+            <p>
+                Исследование посвящено восстановлению глубины сцены
+                по нескольким изображениям с разных ракурсов.
+                Предложенный подход представляет интерес для реализации
+                многовидовой реконструкции.
+            </p>
+            <p><a href="https://arxiv.org/abs/1804.02505" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">08.</span> DeepSDF: Learning Continuous Signed Distance Functions</h3>
+            <p class="authors">Park J. J. et al., CVPR, 2019</p>
+            <p>
+                В работе рассматривается непрерывное представление
+                трехмерной геометрии с помощью нейронной сети,
+                аппроксимирующей функцию знакового расстояния.
+                Метод может применяться для восстановления поверхности объекта.
+            </p>
+            <p><a href="https://arxiv.org/abs/1901.05103" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">09.</span> Occupancy Networks: Learning 3D Reconstruction in Function Space</h3>
+            <p class="authors">Mescheder L. et al., CVPR, 2019</p>
+            <p>
+                Авторы предлагают представлять трехмерные объекты
+                с помощью непрерывной функции занятости пространства.
+                Работа полезна для изучения альтернативных способов
+                кодирования трехмерной формы.
+            </p>
+            <p><a href="https://arxiv.org/abs/1812.03828" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+        <section class="resource">
+            <h3><span class="resource-number">10.</span> NeRF: Representing Scenes as Neural Radiance Fields</h3>
+            <p class="authors">Mildenhall B. et al., ECCV, 2020</p>
+            <p>
+                Исследование посвящено представлению трехмерных сцен
+                с помощью нейронных радиационных полей. Метод использует
+                набор изображений с известными параметрами камер
+                для синтеза новых ракурсов сцены.
+            </p>
+            <p><a href="https://arxiv.org/abs/2003.08934" target="_blank">Открыть публикацию</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Сторожева Полина Антоновна</p>
+        <p>Материалы магистерской работы</p>
+    </footer>
+
+</div>
 </body>
 </html>
